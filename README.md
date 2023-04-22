@@ -2,7 +2,7 @@
 
 This is a Google Search engine clone made using Vue 3
 
-![IP-INFO-TRACKER-GITHUB](https://github.com/YOSEF-CODER/Ip-location-tracker/blob/master/screenshot_ip_info_tracker.png)
+![IP-INFO-TRACKER-GITHUB](https://github.com/YOSEF-CODER/Google-Clone/blob/master/Capture.PNG)
 
 1. Disable the built-in TypeScript Extension
     1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
