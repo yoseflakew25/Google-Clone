@@ -51,17 +51,18 @@ export default {
   <div class="content-wrapper">
     <img class="logo-img" src="./assets/logo.jpg" alt="Google Logo Image">
     <div class="search-bar">
-      <i class="fas fa-search"></i>
+      
+      <i class="fas fa-search" @click="search"></i>
       <input id="search-input" class="search-input" type="text" v-model="searchInput" @keydown.enter="search">
       <i class="fas fa-keyboard"></i>
       <i class="fas fa-microphone"></i>
     </div>
     <div class="search-btns">
-      <button class="google-search-btn">Google Search</button>
-      <button class="lucky-search-btn">I'm Feeling Lucky</button>
+      <button class="google-search-btn" @click="search">Google Search</button>
+      <button class="lucky-search-btn"><a href="https://www.google.com/doodles">I'm Feeling Lucky</a></button>
     </div>
     <div class="language">
-      <p>Google clone made by: <a href="">Yosef Lakew</a></p>
+      <p>Google clone made by: <a href="https://github.com/YOSEF-CODER">Yosef Lakew</a></p>
     </div>
   </div>
 </section>
@@ -74,24 +75,24 @@ export default {
   <div class="footer-content lower-footer">
     <ul class="lower-left-footer">
       <li>
-        <a href="">About</a>
+        <a href="https://about.google/?utm_source=google-NL&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
       </li>
       <li>
-        <a href="">Advertising</a>
+        <a href="https://ads.google.com/intl/en_nl/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
       </li>
       <li>
-        <a href="">Business</a>
+        <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a>
       </li>
       <li>
-        <a href="">How Search Works</a>
+        <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a>
       </li>
     </ul>
     <ul class="lower-right-footer">
       <li>
-        <a href="">Privacy</a>
+        <a href="https://policies.google.com/privacy?hl=en-NL&fg=1">Privacy</a>
       </li>
       <li>
-        <a href="">Terms</a>
+        <a href="https://policies.google.com/terms?hl=en-NL&fg=1">Terms</a>
       </li>
       <li>
         <a href="">Settings</a>
@@ -132,7 +133,7 @@ header {
 .navbar {
   height: 100%;
   width: 100%;
-  padding: 10px 20px;
+  padding: 30px 20px;
 }
 
 .navbar ul {
@@ -149,6 +150,7 @@ header {
 
 .navbar ul li a {
   color: black;
+ 
 }
 
 .link:hover {
